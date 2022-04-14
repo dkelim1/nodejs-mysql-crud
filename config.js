@@ -1,13 +1,13 @@
 var config = {
 	database: {
-		host:	  'localhost', 	// database host
+		host:	  '${aws_db_instance.example.address}', 	// database host
 		user: 	  'admin', 		// your database username
 		password: 'password', 		// your database password
 		port: 	  3306, 		// default MySQL port
 		db: 	  'symbiosdb' 		// your database name
 	},
 	server: {
-		host: '127.0.0.1',
+		host: '*',
 		port: '3000'
 	}
 }
